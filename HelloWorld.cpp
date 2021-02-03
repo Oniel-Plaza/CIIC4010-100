@@ -199,6 +199,7 @@ int main()
     cout << showpoint << setprecision(2) << 9.0 << endl;
 
     cout << "During class!!";
+    cout << "Hiya y'all!!";
     return 0;
 }
 
