@@ -212,6 +212,7 @@ int main()
             << endl;
             // This is just to test some things about anbout the C++ Language and Syntax!!!
             // This is ready to merge with main!!
+            // I don't think we should add this just yet, there are some problems with the clarity of the code that make less apealing :'(
     }
     return 0;
 }
