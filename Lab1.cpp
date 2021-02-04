@@ -12,7 +12,7 @@ int main()
     getline(cin, name);
     cout << "Hello " << name << endl;
     
-    cout << "Experiment...";
+ 
     return 0;
 }
 
