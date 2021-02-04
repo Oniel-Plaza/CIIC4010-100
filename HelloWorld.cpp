@@ -198,8 +198,13 @@ int main()
 
     cout << showpoint << setprecision(2) << 9.0 << endl;
 
-    cout << "During class!!";
-    cout << "Hiya y'all!!";
+    cout << "During class!!\n";
+    cout << "Hiya y'all!!\n";
+    for (int count = 2; count <= 91; count += 2)
+    {
+        cout << "This is the current count: " << count << endl;
+        cout << "This are the remaining iterations: " << showpoint << fixed << setprecision(8) << 90.0 / count << endl;
+    }
     return 0;
 }
 
