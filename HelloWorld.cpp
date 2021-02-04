@@ -203,7 +203,8 @@ int main()
     for (int count = 2; count <= 91; count += 2)
     {
         cout << "This is the current count: " << count << endl;
-        cout << "This are the remaining iterations: " << showpoint << fixed << setprecision(8) << 90.0 / count << endl;
+        cout << "This are the remaining iterations: " << showpoint << fixed << setprecision(8)
+        << 90.0 / count << endl;
     }
     return 0;
 }
