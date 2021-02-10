@@ -34,5 +34,25 @@ int main()
 
     cout << sq1.getSumSides() << endl <<  "All Done!\n";
 
-    
+    struct Box
+    {
+        string color;
+        double length,
+        width,
+        heigth;
+
+        Box(string c, double l, double w, double h)
+        {
+            color = c;
+            length = l;
+            width = w;
+            heigth = h;
+        }
+    };
+
+    // Box iPhone = {"White", 12.0, 14.0, 20.0};
+    Box iPhone = Box("White", 12.0, 14.0, 20.0);
+    cout << "The iPhone box is colored: " << iPhone.color << "\nThe iPhone box's Lenght is: " << iPhone.length;
+    cout << "\nThe iPhone box's Width is: " << iPhone.width << "\nThe iPhone box's Height is: " << iPhone.heigth << endl;
+    cout << "Is the Lenght longer than or equal to the width? " << (iPhone.length >= iPhone.width) << endl; 
 }
