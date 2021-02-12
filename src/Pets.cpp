@@ -4,8 +4,20 @@
 using namespace std;
 
 void Pets::setDescription(string d) { description = d; }
+
 void Pets::setAge(int a) { age = a; }
+
 int Pets::getAge() {return age; }
+
+int Pets::addTentoAge()
+{
+    return this->getAge() + 10;
+}
+
+int calcAge(Pets &p,  int n)
+{
+    return p.getAge() + n;
+}
 
 int main() {
     Pets p1 = Pets("Dog", "Chris", "Black", "Small");
@@ -31,4 +43,9 @@ int main() {
             cout << p2.getSize() << endl << endl;
         }
     }
+    cout << "Adding 10 to P1's age...\n";
+    cout << p1.addTentoAge() << endl;
+
+    cout << "Other way of adding age is: ";
+    cout << calcAge(p1, 10) << endl;
 }

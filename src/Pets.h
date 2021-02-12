@@ -47,4 +47,5 @@ class Pets
 
        void setAge(int a);
        int getAge();
+       int addTentoAge();
 };
