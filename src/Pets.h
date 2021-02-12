@@ -8,10 +8,12 @@ class Pets
        string species,
        name,
        color,
-       size;
-    //    double age,
-    //    weight,
-    //    height;
+       size,
+       description;
+       
+       double age,
+       weight,
+       height;
 
     public:
         // String Setters
@@ -38,4 +40,11 @@ class Pets
             color = c;
             size = z;
         };
+
+        // Other Functions
+       void setDescription(string d);
+       string getDescription();
+
+       void setAge(int a);
+       int getAge();
 };
