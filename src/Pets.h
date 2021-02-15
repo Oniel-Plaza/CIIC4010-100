@@ -35,10 +35,10 @@ class Pets
 
         Pets(string s, string n, string c, string z)
         {
-            species = s;
-            name = n;
-            color = c;
-            size = z;
+            this->species = s;
+            this->name = n;
+            this->color = c;
+            this->size = z;
         };
 
         // Other Functions
