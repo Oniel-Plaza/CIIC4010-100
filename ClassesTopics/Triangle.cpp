@@ -126,7 +126,6 @@ Triangle::Triangle(Triangle &t2) {
     t2.point3 = this->getP3();
 }
 
-}
 
 
 /*
@@ -136,9 +135,13 @@ Triangle::Triangle(Triangle &t2) {
 */
 double Triangle::perimeter() {
     // YOUR CODE HERE
-    double s1 = this->distance(this->getP1());
+    double s1 = this->point1.distance(getP2());
+    double s2 = this->point2.distance(getP3());
+    double s3 = this->point3.distance(getP1());
 
-    return 0.0;  
+    double perimeter = s1 + s2 + s3;
+
+    return perimeter;  
 }
 
 
@@ -181,6 +184,7 @@ string Triangle::findType() {
 int main()
 {
     cout << "COPY/TRY TEST CASES HERE" << endl;
+    Triangle(3,3,3)
 
     return 0;
 }
